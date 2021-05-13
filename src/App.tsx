@@ -3,7 +3,7 @@ import cn from 'classnames';
 import s from './App.module.scss';
 
 const App = () => {
-  return <div className={cn(s.header, 'color')}>This is homework-1!</div>;
+  return <div className={cn(s.header, 'color')}>This is homework-2!</div>;
 };
 
 export default App;
