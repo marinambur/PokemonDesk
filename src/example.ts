@@ -19,7 +19,7 @@ const myHometask: MyInterface = {
 };
 interface MyArray<T> {
   [N: number]: T;
-  reduce(fn: (previousValue: T, currentValue: T, currentIndex: number, array: T[]) => T): T;
+  reduce<U>(callbackfn: (accumulator: U, currentValue: T, currentIndex: number, array: T[]) => U, initValue: U): U;
 }
 
 function myFunc(first: MyArray<number>) {
