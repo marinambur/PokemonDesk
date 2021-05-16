@@ -1,12 +1,23 @@
 import React from 'react';
+import classNames from 'classnames';
 import s from './Button.module.scss';
 
 interface ButtonProps {
   onClick: (event: React.MouseEvent<HTMLButtonElement>) => void;
+  size?: 'defaultSize' | 'small' | 'wide';
+  color?: 'green' | 'yellow';
 }
-const Button: React.FC<ButtonProps> = ({ children, onClick }) => {
+const Button: React.FC<ButtonProps> = ({ children, onClick, color, size }) => {
+  const classes = classNames(
+    s.root,
+    { [s.yellow]: color === 'yellow' },
+    { [s.green]: color === 'green' },
+    { [s.wide]: size === 'wide' },
+    { [s.small]: size === 'small' },
+    { [s.defaultSize]: size === 'defaultSize' },
+  );
   return (
-    <button type="button" className={s.root} onClick={onClick}>
+    <button type="button" className={classes} onClick={onClick}>
       {children}
     </button>
   );
