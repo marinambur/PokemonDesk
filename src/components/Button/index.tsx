@@ -10,11 +10,8 @@ interface ButtonProps {
 const Button: React.FC<ButtonProps> = ({ children, onClick, color, size }) => {
   const classes = classNames(
     s.root,
-    { [s.yellow]: color === 'yellow' },
-    { [s.green]: color === 'green' },
-    { [s.wide]: size === 'wide' },
-    { [s.small]: size === 'small' },
-    { [s.defaultSize]: size === 'defaultSize' },
+    color ? s[`${color}` as keyof typeof s] : null,
+    size ? s[`${size}` as keyof typeof s] : null,
   );
   return (
     <button type="button" className={classes} onClick={onClick}>
