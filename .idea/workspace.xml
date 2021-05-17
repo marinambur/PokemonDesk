@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="ae0b0566-8fcb-499f-8251-e49331ed4b16" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Button/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Button/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Heading/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Heading/index.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,6 +50,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="yarn" />
+    <property name="restartRequiresConfirmation" value="false" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="ts.external.directory.path" value="$PROJECT_DIR$/node_modules/typescript/lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -55,6 +58,10 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/components/Parallax/assets" />
+      <recent name="$PROJECT_DIR$/src/components/Header/assets" />
     </key>
   </component>
   <component name="RunManager" selected="npm.start">
@@ -94,6 +101,9 @@
       <option name="presentableId" value="Default" />
       <updated>1620722438723</updated>
       <workItem from="1620722441433" duration="8256000" />
+      <workItem from="1621092596086" duration="4088000" />
+      <workItem from="1621096817361" duration="4033000" />
+      <workItem from="1621112155219" duration="14470000" />
     </task>
     <servers />
   </component>
