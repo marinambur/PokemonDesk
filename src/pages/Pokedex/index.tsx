@@ -4,7 +4,54 @@ import PokemonCard from '../../components/PokemonCard';
 import s from './Pokedex.module.scss';
 import Heading from '../../components/Heading';
 
-const pokemons = [
+export interface Stats {
+  hp: number;
+  attack: number;
+  defense: number;
+  special_attack: number;
+  special_defense: number;
+  speed: number;
+}
+
+export interface PokemonCard {
+  name_clean?: string;
+  abilities?: string[];
+  stats?: Stats;
+  types?: string[];
+  img?: string;
+  name?: string;
+  base_experience?: number;
+  height?: number;
+  id?: number;
+  is_default?: boolean;
+  order?: number;
+  weight?: number;
+
+  map(
+    element: ({
+      img,
+      name_clean,
+      stats,
+      abilities,
+      types,
+      id,
+    }: {
+      img: string;
+      name_clean: string;
+      stats: Stats;
+      abilities: any;
+      id: any;
+      types: any;
+      name: any;
+      base_experience: any;
+      height: number;
+      is_default: boolean;
+      order: number;
+      weight: number;
+    }) => JSX.Element,
+  ): any;
+}
+const pokemons: PokemonCard = [
   {
     name_clean: 'bulbasaur',
     abilities: ['overgrow', 'chlorophyll'],
