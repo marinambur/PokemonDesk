@@ -3,8 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="ae0b0566-8fcb-499f-8251-e49331ed4b16" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Button/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Button/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Heading/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Heading/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Heading/Heading.module.scss.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Heading/Heading.module.scss.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/PokemonCard/PokemonCard.module.scss.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PokemonCard/PokemonCard.module.scss.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/PokemonCard/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PokemonCard/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/NotFoundPage/NotFound.module.scss.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/NotFoundPage/NotFound.module.scss.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Pokedex/Pokedex.module.scss.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Pokedex/Pokedex.module.scss.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Pokedex/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Pokedex/index.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,6 +64,8 @@
       <recent name="$PROJECT_DIR$" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/pages" />
+      <recent name="$PROJECT_DIR$/src/pages/NotFoundPage/assets" />
       <recent name="$PROJECT_DIR$/src/components/Parallax/assets" />
       <recent name="$PROJECT_DIR$/src/components/Header/assets" />
     </key>
@@ -103,7 +109,9 @@
       <workItem from="1620722441433" duration="8256000" />
       <workItem from="1621092596086" duration="4088000" />
       <workItem from="1621096817361" duration="4033000" />
-      <workItem from="1621112155219" duration="14470000" />
+      <workItem from="1621112155219" duration="29348000" />
+      <workItem from="1621421030415" duration="724000" />
+      <workItem from="1621580721230" duration="1902000" />
     </task>
     <servers />
   </component>

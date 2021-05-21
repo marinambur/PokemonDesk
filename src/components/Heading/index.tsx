@@ -8,6 +8,7 @@ interface HeadingProps {
 const Heading: React.FC<HeadingProps> = ({ children, priority }) => {
   const CustomTag = priority !== 'p' ? (`h${priority}` as keyof JSX.IntrinsicElements) : `p`;
   const classes = classNames(
+    s.root,
     priority !== 'p' ? s[`h${priority}` as keyof typeof s] : s[`${priority}` as keyof typeof s],
   );
   return <CustomTag className={classes}>{children}</CustomTag>;
