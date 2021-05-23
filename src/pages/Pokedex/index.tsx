@@ -1,8 +1,9 @@
-import React from 'react';
-import Header from '../../components/Header';
+import React, {useEffect, useState} from 'react';
 import PokemonCard from '../../components/PokemonCard';
 import s from './Pokedex.module.scss';
 import Heading from '../../components/Heading';
+import config from "../../config";
+import req from "../../utils/request";
 
 export interface Stats {
   hp: number;
@@ -51,228 +52,55 @@ export interface PokemonCard {
     }) => JSX.Element,
   ): any;
 }
-const pokemons: PokemonCard = [
-  {
-    name_clean: 'bulbasaur',
-    abilities: ['overgrow', 'chlorophyll'],
-    stats: {
-      hp: 45,
-      attack: 49,
-      defense: 49,
-      special_attack: 65,
-      special_defense: 65,
-      speed: 45,
-    },
-    types: ['grass', 'poison'],
-    img: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png',
-    name: 'bulbasaur',
-    base_experience: 64,
-    height: 7,
-    id: 1,
-    is_default: true,
-    order: 1,
-    weight: 69,
-  },
-  {
-    name_clean: 'ivysaur',
-    abilities: ['overgrow', 'chlorophyll'],
-    stats: {
-      hp: 60,
-      attack: 62,
-      defense: 63,
-      special_attack: 80,
-      special_defense: 80,
-      speed: 60,
-    },
-    types: ['grass', 'poison'],
-    img: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/2.png',
-    name: 'ivysaur',
-    base_experience: 142,
-    height: 10,
-    id: 2,
-    is_default: true,
-    order: 2,
-    weight: 130,
-  },
-  {
-    name_clean: 'venusaur',
-    abilities: ['overgrow', 'chlorophyll'],
-    stats: {
-      hp: 80,
-      attack: 82,
-      defense: 83,
-      special_attack: 100,
-      special_defense: 100,
-      speed: 80,
-    },
-    types: ['grass', 'poison'],
-    img: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/3.png',
-    name: 'venusaur',
-    base_experience: 236,
-    height: 20,
-    id: 3,
-    is_default: true,
-    order: 3,
-    weight: 1000,
-  },
-  {
-    name_clean: 'charmander',
-    abilities: ['blaze', 'solar-power'],
-    stats: {
-      hp: 39,
-      attack: 52,
-      defense: 43,
-      special_attack: 60,
-      special_defense: 50,
-      speed: 65,
-    },
-    types: ['fire'],
-    img: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/4.png',
-    name: 'charmander',
-    base_experience: 62,
-    height: 6,
-    id: 4,
-    is_default: true,
-    order: 5,
-    weight: 85,
-  },
-  {
-    name_clean: 'charmeleon',
-    abilities: ['blaze', 'solar-power'],
-    stats: {
-      hp: 58,
-      attack: 64,
-      defense: 58,
-      special_attack: 80,
-      special_defense: 65,
-      speed: 80,
-    },
-    types: ['fire'],
-    img: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/5.png',
-    name: 'charmeleon',
-    base_experience: 142,
-    height: 11,
-    id: 5,
-    is_default: true,
-    order: 6,
-    weight: 190,
-  },
-  {
-    name_clean: 'charizard',
-    abilities: ['blaze', 'solar-power'],
-    stats: {
-      hp: 78,
-      attack: 84,
-      defense: 78,
-      special_attack: 109,
-      special_defense: 85,
-      speed: 100,
-    },
-    types: ['fire', 'flying'],
-    img: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/6.png',
-    name: 'charizard',
-    base_experience: 240,
-    height: 17,
-    id: 6,
-    is_default: true,
-    order: 7,
-    weight: 905,
-  },
-  {
-    name_clean: 'squirtle',
-    abilities: ['torrent', 'rain-dish'],
-    stats: {
-      hp: 44,
-      attack: 48,
-      defense: 65,
-      special_attack: 50,
-      special_defense: 64,
-      speed: 43,
-    },
-    types: ['water'],
-    img: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/7.png',
-    name: 'squirtle',
-    base_experience: 63,
-    height: 5,
-    id: 7,
-    is_default: true,
-    order: 10,
-    weight: 90,
-  },
-  {
-    name_clean: 'wartortle',
-    abilities: ['torrent', 'rain-dish'],
-    stats: {
-      hp: 59,
-      attack: 63,
-      defense: 80,
-      special_attack: 65,
-      special_defense: 80,
-      speed: 58,
-    },
-    types: ['water'],
-    img: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/8.png',
-    name: 'wartortle',
-    base_experience: 142,
-    height: 10,
-    id: 8,
-    is_default: true,
-    order: 11,
-    weight: 225,
-  },
-  {
-    name_clean: 'blastoise',
-    abilities: ['torrent', 'rain-dish'],
-    stats: {
-      hp: 79,
-      attack: 83,
-      defense: 100,
-      special_attack: 85,
-      special_defense: 105,
-      speed: 78,
-    },
-    types: ['water'],
-    img: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/9.png',
-    name: 'blastoise',
-    base_experience: 239,
-    height: 16,
-    id: 9,
-    is_default: true,
-    order: 12,
-    weight: 855,
-  },
-  {
-    name_clean: 'caterpie',
-    abilities: ['shield-dust', 'run-away'],
-    stats: {
-      hp: 45,
-      attack: 30,
-      defense: 35,
-      special_attack: 20,
-      special_defense: 20,
-      speed: 45,
-    },
-    types: ['bug'],
-    img: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10.png',
-    name: 'caterpie',
-    base_experience: 39,
-    height: 3,
-    id: 10,
-    is_default: true,
-    order: 14,
-    weight: 29,
-  },
-];
-
+const usePokemons = () => {
+  const [data, setData] = useState([]);
+  const [isLoading, setIsLoading] = useState(true);
+  const [isError, setIsError] = useState(false);
+  useEffect(()=> {
+    const getPokemons = async() => {
+      setIsLoading(true);
+      const url = `${config.client.server.protocol}://${config.client.server.host}${config.client.endpoint.getPokemons.uri.pathname}`;
+      console.log('URL', url)
+      try {
+        const result = await req('getPokemons');
+        setData(result);
+      } catch (e) {
+        setIsError(true);
+      } finally {
+        setIsLoading(false);
+      }
+    }
+    getPokemons();
+  }, []);
+  return {
+    data,
+    isLoading,
+    isError
+  }
+}
 const Pokedex = () => {
+  const {
+    data,
+    isLoading,
+    isError
+  } = usePokemons();
+  if (isLoading) {
+    return <div>
+      LOADING....
+    </div>
+  }
+  if (isError) {
+    return <div>
+      ERR....
+    </div>
+  }
   return (
     <div>
-      <Header />
       <div className={s.root}>
-        <Heading priority={3}>800 pokemons for you to choose your favorite</Heading>
+        <Heading priority={3}>{data.total} pokemons for you to choose your favorite</Heading>
         <div className={s.grid}>
-          {pokemons.map(({ img, name_clean, stats, abilities, id }) => (
-            <PokemonCard key={id} img={img} name={name_clean} stats={stats} abilities={abilities} />
+          {data.pokemons.map(item => (
+            <PokemonCard key={item.id} img={item.img} name={item.name_clean} stats={item.stats} abilities={item.abilities} />
           ))}
         </div>
       </div>

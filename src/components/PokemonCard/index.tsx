@@ -2,21 +2,6 @@ import React from 'react';
 import Heading from '../Heading';
 
 import s from './PokemonCard.module.scss';
-// interface PokemonCardProps {
-//     name?: string
-//     abilities?: object
-//     img?: string
-//     stats?: {
-//         hp: number,
-//         attack: number,
-//         defense: number,
-//         "special-attack": number,
-//         "special-defense": 20,
-//         speed: 45
-//     }
-//
-//
-// }
 export interface Stats {
   hp: number;
   attack: number;
