@@ -1,11 +1,50 @@
 import React from 'react';
+import useData from "../../hook/getData";
+import s from './Pokemon.module.scss';
+import {Ipokemons, PokemonsRequest} from "../../interface/pokemon";
+import Heading from "../../components/Heading";
 export interface PokemonProps {
     id: string|number
 }
-const Pokemon: React.FC<PokemonProps> = ({id}) => {
+const Pokemon: React.FC<PokemonsRequest> = ({id}) => {
+    const {data, isLoading} = useData<PokemonsRequest>('getPokemon', {id});
+    console.log(data)
     return (
-        <div>
-            This is pokemon equal {id}
+        <div className={s.root}>
+            <div className={s.pictureWrap}>
+                <img src={`${data && data?.img}`} alt={`${data?.name}`} />
+            </div>
+            <div className={s.infoWrap}>
+                <div className={s.nameText}>
+                    <Heading priority={2}>{data && data?.name}</Heading>
+                    <Heading priority={'p'}>Generation 1</Heading>
+                    <Heading priority={4}>{id}</Heading>
+                </div>
+                <div className={s.abilities}>
+                    <p >Abilities</p>
+                    <p >
+                        {data && data?.abilities.map((ability) => (
+                            <p>{ability}</p>
+                    ))}
+                    </p>
+                </div>
+                <div className={s.statWrap}>
+                    <div className={s.statItem}>
+                        <div className={s.statValue}>{data && data?.stats.attack}</div>
+                        Attack
+                    </div>
+                    <div className={s.statItem}>
+                        <div className={s.statValue}>{data && data?.stats.defense}</div>
+                        Defense
+                    </div>
+                </div>
+                <div className={s.labelWrap}>
+                    {data && data?.abilities.map((ability) => (
+                        <span className={s.label}>{ability}</span>
+                    ))}
+                </div>
+            </div>
+
         </div>
     );
 };

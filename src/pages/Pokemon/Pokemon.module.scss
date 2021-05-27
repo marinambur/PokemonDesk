@@ -1,6 +1,4 @@
 .root {
-  width: 351px;
-  height: 136px;
   box-shadow: 4px 4px 4px rgba(33, 33, 33, 0.1);
   background: #f6f7f9;
   border-radius: 8px;
@@ -9,21 +7,28 @@
   margin-bottom: 45px;
   cursor: pointer;
   transition: all ease-in-out 0.15s;
+  width: 800px;
+  height: 370px;
 
   &:hover {
     transform: scale(1.03);
     transition: all ease-in-out 0s;
   }
 }
-
+.nameText {
+  display: flex;
+}
 .infoWrap {
   position: absolute;
   z-index: 1;
-  width: 150px;
+  width: 40%;
   top: 6px;
-  left: 25px;
+  right: 25px;
 }
-
+.abilities {
+  display: flex;
+  flex-direction: column;
+}
 .titleName {
   margin-bottom: 12px;
   text-shadow: 4px 4px 4px rgba(33, 33, 33, 0.1);
@@ -66,11 +71,11 @@
 }
 
 .pictureWrap {
-  width: 232px;
+  width: 50%;
   height: 100%;
   background: linear-gradient(270deg, #b33327 0.15%, #d93e30 100%);
   position: absolute;
-  right: 0;
+  left: 0;
   display: flex;
   justify-content: center;
   align-items: center;
