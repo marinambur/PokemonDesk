@@ -3,12 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="ae0b0566-8fcb-499f-8251-e49331ed4b16" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/config/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hook/getData.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/hook/getData.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Heading/Heading.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Heading/Heading.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Heading/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Heading/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Pokedex/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Pokedex/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/Pokemon/Pokemon.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Pokemon/Pokemon.module.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/Pokemon/Pokemon.module.scss.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Pokemon/Pokemon.module.scss.d.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/Pokemon/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Pokemon/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/getUrlWithParamsConfig.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/getUrlWithParamsConfig.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

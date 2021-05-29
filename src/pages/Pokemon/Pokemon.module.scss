@@ -1,7 +1,5 @@
 .root {
   box-shadow: 4px 4px 4px rgba(33, 33, 33, 0.1);
-  background: #f6f7f9;
-  border-radius: 8px;
   overflow: hidden;
   position: relative;
   margin-bottom: 45px;
@@ -9,6 +7,8 @@
   transition: all ease-in-out 0.15s;
   width: 800px;
   height: 370px;
+  background: linear-gradient(180deg, #732119 42.19%, #D93E30 100%);
+  border-radius: 16px;
 
   &:hover {
     transform: scale(1.03);
@@ -17,6 +17,32 @@
 }
 .nameText {
   display: flex;
+  color: white;
+  justify-content: space-between;
+  width: 100%;
+}
+.pokemonParams {
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+  align-self: center;
+}
+.pokemonId {
+  background-color: yellow;
+  width: 36px;
+  height: 36px;
+  /* border: 3px solid #212121; */
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 18px;
+  color: #212121;
+  margin: 0 auto 8px;
 }
 .infoWrap {
   position: absolute;
@@ -28,6 +54,10 @@
 .abilities {
   display: flex;
   flex-direction: column;
+  border-radius: 10px;
+  width: 264px;
+  height: 60px;
+  background-color: white;
 }
 .titleName {
   margin-bottom: 12px;
@@ -37,6 +67,7 @@
 .statWrap {
   display: flex;
   margin-bottom: 12px;
+  margin-top: 20px;
 }
 
 .statItem {
@@ -47,6 +78,10 @@
   text-align: center;
   color: #4b4b4b;
   margin-right: 12px;
+  width: 82px;
+  height: 62px;
+  background-color: white;
+  border-radius: 10px;
 
   &:last-child {
     margin-right: 0;
@@ -67,8 +102,22 @@
   font-size: 15px;
   line-height: 18px;
   color: #212121;
-  margin: 0 auto 8px;
+  margin: 5px auto 4px;
 }
+.green {
+  width: 100%;
+  background: linear-gradient(270deg, #64D368 0.15%, #64D368 70.88%);
+  border-radius: 8px;
+  height: 5px;
+  margin-top: 10px
+}
+.yellow {
+    width: 90%;
+    background: linear-gradient(180deg, #F5DB13 0%, #F2B807 100%);
+    border-radius: 8px;
+    height: 5px;
+    margin-top: 10px
+  }
 
 .pictureWrap {
   width: 50%;
@@ -113,4 +162,45 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
+}
+.pokemonHeader {
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 42px;
+  text-align: left;
+  width: 50%;
+}
+p {
+  margin: 0;
+}
+.features {
+   display: flex;
+}
+.textBox {
+  width: 70%;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+.healthyPoints {
+  width: 50%;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+.experience {
+  width: 50%;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+.xpBox {
+  display: flex;
+  border-radius: 10px;
+  width: 100%;
+  height: 78px;
+  background-color: white;
+  justify-content: space-between;
+  margin-top: 20px
+}
+.xpTextBox {
+  width: 100%;
 }
