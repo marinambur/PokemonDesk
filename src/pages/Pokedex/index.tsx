@@ -43,7 +43,9 @@ const debouncedValue = useDebounce(searchValue, 500);
         </div>
         <div className={s.grid}>
           {!isLoading && data && data.pokemons.map((item: PokemonsRequest) => (
+              <a href={`/pokedex/${item.id}`}>
             <PokemonCard key={item.id} img={item.img} name={item.name_clean} stats={item.stats} abilities={item.abilities} />
+              </a>
           ))}
         </div>
       </div>

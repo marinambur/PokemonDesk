@@ -2,13 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ae0b0566-8fcb-499f-8251-e49331ed4b16" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/jest.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/example.test.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/getUrlWithParamsConfig.test.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/config/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hook/getData.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/hook/getData.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Pokemon/Pokemon.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Pokemon/Pokemon.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Pokemon/Pokemon.module.scss.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Pokemon/Pokemon.module.scss.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/example.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/example.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Pokedex/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Pokedex/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/Pokemon/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Pokemon/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/utils/getUrlWithParamsConfig.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/getUrlWithParamsConfig.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/request.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/request.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,6 +57,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs.jest.jest_package" value="$PROJECT_DIR$/node_modules/jest" />
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
@@ -71,31 +76,81 @@
       <recent name="$PROJECT_DIR$/src/components/Header/assets" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.start">
-    <configuration name="build:prod" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/package.json" />
-      <command value="run" />
-      <scripts>
-        <script value="build:prod" />
-      </scripts>
+  <component name="RunManager" selected="Jest.returns the first letter capitalized">
+    <configuration name="This is my first test" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$" />
       <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/example.test.ts" />
+      <test-names>
+        <test-name value="This is my first test" />
+      </test-names>
       <method v="2" />
     </configuration>
-    <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/package.json" />
-      <command value="run" />
-      <scripts>
-        <script value="start" />
-      </scripts>
+    <configuration name="getUrlWithParamsConfig" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$" />
       <envs />
+      <scope-kind value="SUITE" />
+      <test-file value="$PROJECT_DIR$/src/utils/getUrlWithParamsConfig.test.js" />
+      <test-names>
+        <test-name value="getUrlWithParamsConfig" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="getUrlWithParamsConfig.Должна принимать 2 аргумента &quot;getPokemons&quot; и пустой объект, на выходе получить объект с полями pathname, protocol, host и пустым query" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/utils/getUrlWithParamsConfig.test.js" />
+      <test-names>
+        <test-name value="getUrlWithParamsConfig" />
+        <test-name value="Должна принимать 2 аргумента &quot;getPokemons&quot; и пустой объект, на выходе получить объект с полями pathname, protocol, host и пустым query" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="getUrlWithParamsConfig.Должна принимать 2 аргумента &quot;getPokemons&quot; и {id: 25}, на выходе получить объект с полями pathname, protocol, host и query с полями name равное Pikachu" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/utils/getUrlWithParamsConfig.test.js" />
+      <test-names>
+        <test-name value="getUrlWithParamsConfig" />
+        <test-name value="Должна принимать 2 аргумента &quot;getPokemons&quot; и {id: 25}, на выходе получить объект с полями pathname, protocol, host и query с полями name равное Pikachu" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="returns the first letter capitalized" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/example.test.ts" />
+      <test-names>
+        <test-name value="returns the first letter capitalized" />
+      </test-names>
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.start" />
-        <item itemvalue="npm.build:prod" />
+        <item itemvalue="Jest.returns the first letter capitalized" />
+        <item itemvalue="Jest.This is my first test" />
+        <item itemvalue="Jest.getUrlWithParamsConfig" />
+        <item itemvalue="Jest.getUrlWithParamsConfig.Должна принимать 2 аргумента &quot;getPokemons&quot; и {id: 25}, на выходе получить объект с полями pathname, protocol, host и query с полями name равное Pikachu" />
+        <item itemvalue="Jest.getUrlWithParamsConfig.Должна принимать 2 аргумента &quot;getPokemons&quot; и пустой объект, на выходе получить объект с полями pathname, protocol, host и пустым query" />
       </list>
     </recent_temporary>
   </component>

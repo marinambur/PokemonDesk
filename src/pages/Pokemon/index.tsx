@@ -8,7 +8,9 @@ export interface PokemonProps {
 }
 const Pokemon: React.FC<PokemonsRequest> = ({id}) => {
     const {data, isLoading} = useData<PokemonsRequest>('getPokemon', {id});
-    console.log(data)
+ if(isLoading) {
+     return (<div>Loading....</div>)
+ }
     return (
         <div className={s.root}>
             <div className={s.pictureWrap}>
