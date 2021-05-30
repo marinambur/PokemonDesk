@@ -6,8 +6,8 @@ export interface Stats {
   hp: number;
   attack: number;
   defense: number;
-  special_attack: number;
-  special_defense: number;
+  "special-attack": number;
+  "special-defense": number;
   speed: number;
 }
 
