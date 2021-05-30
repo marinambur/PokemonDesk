@@ -2,16 +2,27 @@
 // Please do not change this file!
 interface CssExports {
   'abilities': string;
+  'experience': string;
+  'features': string;
+  'green': string;
+  'healthyPoints': string;
   'infoWrap': string;
   'label': string;
   'labelWrap': string;
   'nameText': string;
   'pictureWrap': string;
+  'pokemonHeader': string;
+  'pokemonId': string;
+  'pokemonParams': string;
   'root': string;
   'statItem': string;
   'statValue': string;
   'statWrap': string;
+  'textBox': string;
   'titleName': string;
+  'xpBox': string;
+  'xpTextBox': string;
+  'yellow': string;
 }
 export const cssExports: CssExports;
 export default cssExports;

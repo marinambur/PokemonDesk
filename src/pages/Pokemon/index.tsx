@@ -16,17 +16,40 @@ const Pokemon: React.FC<PokemonsRequest> = ({id}) => {
             </div>
             <div className={s.infoWrap}>
                 <div className={s.nameText}>
-                    <Heading priority={2}>{data && data?.name}</Heading>
-                    <Heading priority={'p'}>Generation 1</Heading>
-                    <Heading priority={4}>{id}</Heading>
+                    <Heading priority={2} className={s.pokemonHeader}>{data && data?.name}</Heading>
+                    <div className={s.pokemonParams}>
+                        <Heading priority={'p'}>Generation 1</Heading>
+                        <Heading priority={4} className={s.pokemonId}>{id}</Heading>
+                    </div>
                 </div>
                 <div className={s.abilities}>
-                    <p >Abilities</p>
-                    <p >
-                        {data && data?.abilities.map((ability) => (
-                            <p>{ability}</p>
-                    ))}
-                    </p>
+                    <div className={s.textBox}>
+                        <p >Abilities</p>
+                        <div className={s.features}>
+                            {data && data?.abilities.map((ability) => (
+                                <p>{ability}</p>
+                            ))}
+                        </div>
+                    </div>
+
+                </div>
+                <div className={s.xpBox}>
+                <div className={s.healthyPoints}>
+                    <div className={s.xpTextBox}>
+                        <p>Healthy Points</p>
+                        <p>1 000 000</p>
+                        <div className={s.green}></div>
+                    </div>
+
+                </div>
+                <div className={s.experience}>
+                    <div className={s.xpTextBox}>
+                        <p>Experience</p>
+                        <p>1 000 000</p>
+                        <div className={s.yellow}></div>
+                    </div>
+
+                </div>
                 </div>
                 <div className={s.statWrap}>
                     <div className={s.statItem}>
@@ -36,6 +59,14 @@ const Pokemon: React.FC<PokemonsRequest> = ({id}) => {
                     <div className={s.statItem}>
                         <div className={s.statValue}>{data && data?.stats.defense}</div>
                         Defense
+                    </div>
+                    <div className={s.statItem}>
+                        <div className={s.statValue}>{data && data?.stats.attack}</div>
+                        Sp. Attack
+                    </div>
+                    <div className={s.statItem}>
+                        <div className={s.statValue}>{data && data?.stats.defense}</div>
+                        Sp. Defense
                     </div>
                 </div>
                 <div className={s.labelWrap}>
