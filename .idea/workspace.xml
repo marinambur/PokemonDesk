@@ -2,13 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ae0b0566-8fcb-499f-8251-e49331ed4b16" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/server/server.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webpack.client.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webpack.server.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.eslintignore" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Heading/Heading.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Heading/Heading.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Heading/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Heading/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Pokedex/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Pokedex/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Pokemon/Pokemon.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Pokemon/Pokemon.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Pokemon/Pokemon.module.scss.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Pokemon/Pokemon.module.scss.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Pokemon/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Pokemon/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
