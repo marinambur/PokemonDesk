@@ -5,4 +5,5 @@ import { toCapitalizeFirstLetter } from './example';
 
 test('returns the first letter capitalized', () => {
     expect(toCapitalizeFirstLetter('john')).toBe('John');
+    expect(toCapitalizeFirstLetter('')).toBe('');
 });

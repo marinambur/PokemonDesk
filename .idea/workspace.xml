@@ -2,16 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ae0b0566-8fcb-499f-8251-e49331ed4b16" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/jest.config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/example.test.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/getUrlWithParamsConfig.test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Heading/index.test.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jest.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/jest.config.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/example.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/example.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Pokedex/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Pokedex/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Pokemon/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Pokemon/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/getUrlWithParamsConfig.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/getUrlWithParamsConfig.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/request.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/request.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -76,7 +70,21 @@
       <recent name="$PROJECT_DIR$/src/components/Header/assets" />
     </key>
   </component>
-  <component name="RunManager" selected="Jest.returns the first letter capitalized">
+  <component name="RunManager" selected="Jest.Heading.render">
+    <configuration name="Heading.render" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/components/Heading/index.test.tsx" />
+      <test-names>
+        <test-name value="Heading" />
+        <test-name value="render" />
+      </test-names>
+      <method v="2" />
+    </configuration>
     <configuration name="This is my first test" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
@@ -100,20 +108,6 @@
       <test-file value="$PROJECT_DIR$/src/utils/getUrlWithParamsConfig.test.js" />
       <test-names>
         <test-name value="getUrlWithParamsConfig" />
-      </test-names>
-      <method v="2" />
-    </configuration>
-    <configuration name="getUrlWithParamsConfig.Должна принимать 2 аргумента &quot;getPokemons&quot; и пустой объект, на выходе получить объект с полями pathname, protocol, host и пустым query" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
-      <node-interpreter value="project" />
-      <node-options value="" />
-      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
-      <working-dir value="$PROJECT_DIR$" />
-      <envs />
-      <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/src/utils/getUrlWithParamsConfig.test.js" />
-      <test-names>
-        <test-name value="getUrlWithParamsConfig" />
-        <test-name value="Должна принимать 2 аргумента &quot;getPokemons&quot; и пустой объект, на выходе получить объект с полями pathname, protocol, host и пустым query" />
       </test-names>
       <method v="2" />
     </configuration>
@@ -146,11 +140,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Jest.Heading.render" />
         <item itemvalue="Jest.returns the first letter capitalized" />
         <item itemvalue="Jest.This is my first test" />
         <item itemvalue="Jest.getUrlWithParamsConfig" />
         <item itemvalue="Jest.getUrlWithParamsConfig.Должна принимать 2 аргумента &quot;getPokemons&quot; и {id: 25}, на выходе получить объект с полями pathname, protocol, host и query с полями name равное Pikachu" />
-        <item itemvalue="Jest.getUrlWithParamsConfig.Должна принимать 2 аргумента &quot;getPokemons&quot; и пустой объект, на выходе получить объект с полями pathname, protocol, host и пустым query" />
       </list>
     </recent_temporary>
   </component>
@@ -168,6 +162,7 @@
       <workItem from="1621112155219" duration="29348000" />
       <workItem from="1621421030415" duration="724000" />
       <workItem from="1621580721230" duration="1902000" />
+      <workItem from="1622643842850" duration="1931000" />
     </task>
     <servers />
   </component>
